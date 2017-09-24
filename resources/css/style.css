@@ -6,9 +6,6 @@ html {
     background-color: white;
 }
 
-div {
-    display: block;
-}
 
 .container{
     max-width: 960px;
@@ -28,18 +25,21 @@ h4 {
 .company {
     background-color: black;
     color: white;
+    font-size: 1rem;
 }
 
 .company .container {
     display: flex;
     align-items: center;
-    padding: 12px 0 12px 0.5em;
-    max-width: 960px;
+    padding-top: 0.66rem;
+    padding-bottom: 0.66rem;
 }
 
 .company img {
     height: 1.5em;
     padding-right: 15px;
+    margin-left: 0.5rem;
+    margin-right: 1rem;
 }
 
 /*main banner*/
@@ -48,7 +48,8 @@ h4 {
     height: 25em;
     background-image: url("../photos/moto.jpeg");
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
+    background-size:cover;
 }
 
 .headline{
@@ -59,13 +60,21 @@ h4 {
     top: 9em;
     padding: 2em 3em;
     opacity: 1;
+    font-weight: bold;
 }
 
 .headline h1 {
     font-size: 2em;
-    margin: 0.25em 0px;
+    margin: 0.25em;
     font-weight: bold;
     display: block;
+    line-height: 1.2em;
+}
+
+.headline h4 {
+    font-size: 1rem;
+    line-height: 0.25rem;
+    margin: 1em 0;
 }
 
 /*nav bar*/
@@ -75,19 +84,29 @@ nav {
     color: white;
 }
 
-nav ul {
+nav .container{
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.75em 0px;
+    padding: 0.75em 0;
+}
+
+nav ul {
     list-style: none;
 }
+
+nav .mobile-nav {
+    display: none;
+}
+
 
 /*Products info*/
 
 .products {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin: 3em 0px 0px;
+    margin: 3em 0 0 0;
 }
 
 .product {
@@ -99,14 +118,11 @@ nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-width: 4px;
-    border-style: solid;
-    border-color: black;
-    border-image: initial;
+    border: 4px solid black;
     padding: 2em 0px;
 }
 
-.product-image img {
+.product img {
     max-width: 8em;
 }
 
@@ -123,14 +139,15 @@ nav ul {
 .business-info {
     display: flex;
     justify-content: space-between;
-    margin: 3em 0px 0px;
+    margin: 3em 0 0 0;
 }
 
 .info {
     width: 35%;
+    color: black;
 }
 
-.info.title {
+.title {
     display: block;
     background-color: black;
     color: white;
@@ -144,5 +161,4 @@ footer {
     color: white;
     margin-top: 4em;
     padding: 5em 0px;
-    text-align: left;
 }
