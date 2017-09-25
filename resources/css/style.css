@@ -162,3 +162,54 @@ footer {
     margin-top: 4em;
     padding: 5em 0px;
 }
+
+/*Responsive design*/
+
+/*Tablet 1024px*/
+
+@media only screen and (max-width: 1024px) {
+    
+        nav .container{
+        display: none;
+    }
+
+    nav .mobile-nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.75em 0;
+    }
+
+    .product {
+        width: 47%;
+    }
+
+    .product.glasses {
+        display: none;
+    }
+    
+    .info {
+        width: 35%;
+    }
+
+    .company {
+        font-size: 1.5em;
+    }
+    
+}
+
+/*Phone 470px*/
+
+@media only screen and (max-width: 470px) {
+    
+    .company span {
+        display: none;
+    }
+    
+    .company img {
+        padding-right: 235px;
+    }
+    
+}
+    
+
