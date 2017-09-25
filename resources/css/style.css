@@ -200,14 +200,98 @@ footer {
 
 /*Phone 470px*/
 
-@media only screen and (max-width: 470px) {
+@media only screen
+and (max-width: 480px)
+and (min-width: 320px)
+and (orientation: portrait) {
     
     .company span {
         display: none;
     }
     
-    .company img {
-        padding-right: 235px;
+    .company .container{
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      padding: 1.25rem 1.25rem;
+    }
+    
+    nav .mobile-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding-top: 10%;
+      padding-bottom: 5%
+    }
+    
+    .headline {
+    width: 100%;
+    padding-left: 4%
+        
+  }
+    
+    .headline h1 {
+    font-size: 1.80rem;
+    margin: auto;
+  }
+    .headline h4 {
+        font-size: 1rem;
+        font-weight:200;
+    }
+    
+    .main-banner {
+    height: 18em;
+  }
+
+    .business-info{
+      width: 90%;
+      padding-top: 1rem;
+    }
+
+    .container .business-info{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 90%;
+      padding: 0.5rem;
+    
+    }
+    
+    .info{
+        width: 90%;
+        padding-top: 0.5rem;
+        margin-bottom: 
+    }
+    
+    .info span{
+        margin-bottom: 5%;
+        margin-top: 5%;
+        padding-bottom: 5%;
+    }
+    
+    .products{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+    
+    .product.glasses {
+        display: none;
+    }
+
+    .product.watch {
+        display: none;
+    }
+    
+    .product.pen{
+        width: 200%;
+    }
+    
+    footer {
+      text-align: center;
     }
     
 }
